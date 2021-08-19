@@ -1,20 +1,33 @@
+import {
+  NameRestaurant,
+  TypeName,
+  ListItem,
+  StyledNavigation,
+  NavigationList,
+  Header,
+  NavigationInner,
+} from "./styled";
+import { StyledButton } from "../Button";
+
 export const Navigation = () => {
   return (
     <>
-      <nav>
-        <header>
-          <h2>Ribollita</h2>
-          <p>Italian Restaurant</p>
-        </header>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Menu</li>
-          <li>Gallery</li>
-          <li>Contact</li>
-        </ul>
-        <button>Book now</button>
-      </nav>
+      <StyledNavigation>
+        <NavigationInner>
+          <Header>
+            <NameRestaurant>Anolini</NameRestaurant>
+            <TypeName>Italian Restaurant</TypeName>
+          </Header>
+          <NavigationList>
+            <ListItem>Home</ListItem>
+            <ListItem>About</ListItem>
+            <ListItem>Menu</ListItem>
+            <ListItem>Gallery</ListItem>
+            <ListItem>Contact</ListItem>
+          </NavigationList>
+          <StyledButton>Book now</StyledButton>
+        </NavigationInner>
+      </StyledNavigation>
     </>
   );
 };
