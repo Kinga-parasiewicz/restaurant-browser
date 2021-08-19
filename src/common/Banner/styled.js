@@ -20,7 +20,6 @@ export const SectionName = styled.h1`
   color: black;
   margin-bottom: 20px;
   margin-left: -200px;
-  z-index: 2;
 `;
 
 export const SectionParagraph = styled.p`
@@ -29,5 +28,4 @@ export const SectionParagraph = styled.p`
   max-width: 500px;
   margin-left: -180px;
   margin-bottom: 50px;
-  z-index: 2;
 `;
