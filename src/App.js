@@ -1,12 +1,12 @@
-
+import { Navigation } from "./common/Navigation/index";
+import { Banner } from "./common/Banner/index";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       
-      </header>
-    </div>
+    <>
+      <Navigation />
+      <Banner />
+    </>
   );
 }
 
