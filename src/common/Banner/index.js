@@ -1,17 +1,17 @@
-
+import { Section, SectionName, SectionParagraph } from "./styled";
+import { StyledButton } from "./../../common/Button";
 
 export const Banner = () => {
-
-    return(
-        <>
-        <section>
-            <h1>Welcome</h1>
-            <p>Our restaurant offers full-service dining with breathtaking views 
-                seen from our indoor covered patio and our outdoor sundeck.
-            </p>
-            <button>Meet us</button>
-        </section>
-        </>
-
-    )
-}
+  return (
+    <>
+      <Section>
+        <SectionName>Welcome</SectionName>
+        <SectionParagraph>
+          Our restaurant offers full-service dining with breathtaking views seen
+          from our indoor covered patio and our outdoor sundeck.
+        </SectionParagraph>
+        <StyledButton sectionButton>Meet us</StyledButton>
+      </Section>
+    </>
+  );
+};
