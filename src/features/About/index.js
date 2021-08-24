@@ -1,12 +1,13 @@
-import { Wrapper, WrapperInner, Name, Description } from "./styled";
+import { Wrapper, WrapperInner, Name, Description, DescriptionBox } from "./styled";
 import restaurant from "./../../assets/restaurant.jpg";
+import { StyledButton } from "./../../common/Button";
 
 export const About = () => {
   return (
     <Wrapper>
       <WrapperInner>
         <img src={restaurant} alt="restaurant" />
-        <div>
+        <DescriptionBox>
           <Name>About Us</Name>
           <Description>
             Anolini is a family owned and operated Italian Restaurant offering a
@@ -15,7 +16,8 @@ export const About = () => {
             dishes, while offering the best customer service. Our kitchen is
             committed to providing our guests with the best Italian Cuisine.
           </Description>
-        </div>
+          <StyledButton background >Read more</StyledButton>
+        </DescriptionBox>
       </WrapperInner>
     </Wrapper>
   );
