@@ -6,10 +6,10 @@ export const Wrapper = styled.section`
 `;
 
 export const WrapperInner = styled.div`
-  padding-top: 150px;
+  padding-top: 180px;
   padding-bottom: 50px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: 50px;
 `;
 
@@ -20,4 +20,9 @@ export const Name = styled.h2`
 export const Description = styled.p`
   max-width: 500px;
   font-size: 18px;
+  line-height: 1.5;
+`;
+export const DescriptionBox = styled.div`
+  margin-left: 70px;
+  text-align: center;
 `;
