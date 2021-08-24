@@ -24,7 +24,8 @@ export const FormLabel = styled.label`
 export const FormInput = styled.input`
   border: none;
   border-bottom: 1px solid #323539;
-  margin-top: 7px;
+  margin-top: 15px;
+  height:30px;
 `;
 
 export const Select = styled.select`
