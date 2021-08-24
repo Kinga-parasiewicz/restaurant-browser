@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  background: #dbdbdc;
+  background: #EFEEEB;
   margin-top: 20px;
 `;
 
