@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledNavigation = styled.nav`
 position:fixed;
@@ -21,13 +21,23 @@ font-family: 'Style Script', cursive;
 font-size:46px;
 margin:0px;
 color: black;
+
+${({colorName}) => colorName && css`
+color:white
+`}
 `;
 
 export const TypeName = styled.p`
 font-family: 'IBM Plex Serif', serif;
 font-size:16px;
 margin-top:-10px;
+
+
+${({colorRest}) => colorRest && css`
+color:white
+`}
 `;
+
 
 export const ListItem = styled.li`
 list-style-type: none;
