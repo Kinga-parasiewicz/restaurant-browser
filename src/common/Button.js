@@ -14,4 +14,14 @@ export const StyledButton = styled.button`
     css`
       margin-left: -170px;
     `}
+
+  ${({ background }) =>
+    background &&
+    css`
+      border: 2px solid #323539;
+      background: #323539;
+      text-transform: uppercase;
+      font-size: 17px;
+      padding: 12px 40px;
+    `}
 `;
