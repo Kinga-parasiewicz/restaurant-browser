@@ -7,8 +7,11 @@ export const StyledForm = styled.form`
   justify-content: space-between;
   max-width: 1000px;
   align-items: center;
-  padding: 55px;
-  margin: -90px auto;
+  padding: 35px;
+  padding-bottom:20px;
+  margin: -110px auto;
+  z-index:2;
+  position:relative;
 `;
 
 export const FormLabel = styled.label`
