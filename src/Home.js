@@ -5,7 +5,7 @@ import { About } from "./features/About";
 import { Footer } from "./common/Footer";
 import { Section } from "./common/Section";
 
-function App() {
+function Home() {
   return (
     <>
       <Navigation />
