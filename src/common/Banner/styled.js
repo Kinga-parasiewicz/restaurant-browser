@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import banner from "./../../assets/backg.jpg";
+import inside from "./../../assets/inside.jpeg";
 
 export const Section = styled.section`
   background: url(${banner});
@@ -12,6 +13,16 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: start;
+
+  ${({ secondBanner }) =>
+    secondBanner &&
+    css`
+      background: url(${inside});
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 50vh;
+    `}
 `;
 
 export const SectionName = styled.h1`
