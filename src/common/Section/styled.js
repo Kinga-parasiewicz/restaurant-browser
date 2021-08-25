@@ -1,8 +1,12 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Image = styled.img`
 max-width:400px;
+
+${({aboutImage}) => aboutImage && css`
+max-width:700px;`}
 `;
+
 export const LastImage= styled.img`
 width:355px;
 `;
@@ -25,6 +29,12 @@ export const Description = styled.p`
   text-align:center;
   color:#71726E;
   margin:30px;
+
+  ${({sentence}) => sentence && css`
+  font-size:25px;
+  margin:0px;
+  max-width:500px;
+  `}
   `;
 export const NameImages = styled.p`
 color:#0914CE;
