@@ -1,30 +1,32 @@
 import ravioli from "./../../assets/ravioli.jpg";
 import gelato from "./../../assets/gelato.jpg";
 import blackPasta from "./../../assets/black-pasta-scaled.jpg";
+import { Image , ImagesBox, Wrapper, LastImage, Description, NameImages} from "./styled"
+import { Name} from "./../../features/About/styled";
 
 export const Section = () => (
-  <section>
-    <h2>Featured offers</h2>
-    <p>
+  <Wrapper>
+    <Name>Featured offers</Name>
+    <Description unlimited>
       We offer a great variety of the best Italian dishes to our visitors and
       guests. Below are some of our most popular main dishes and desserts.
-    </p>
+    </Description>
+    <ImagesBox>
     <div>
-    <div>
-        <img src={ravioli} alt="ravioli"/>
-        <p>
-        </p>
+        <Image src={ravioli} alt="ravioli"/>
+        <NameImages> Ravioli
+        </NameImages>
     </div>
     <div>
-        <img src={blackPasta} alt="black pasta"/>
-        <p>
-        </p>
+        <Image src={blackPasta} alt="black pasta"/>
+        <NameImages>Black Pasta
+        </NameImages>
     </div>
     <div>
-        <img src={gelato} alt="gelato"/>
-        <p>
-        </p>
+        <LastImage src={gelato} alt="gelato"/>
+        <NameImages>Ice cream
+        </NameImages>
     </div>
-    </div>
-  </section>
+    </ImagesBox>
+  </Wrapper>
 );
