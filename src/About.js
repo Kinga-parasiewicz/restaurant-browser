@@ -1,7 +1,7 @@
 import { Navigation } from "./common/Navigation";
 import { Footer } from "./common/Footer";
 import { Section } from "./common/Banner/styled";
-import rest2 from "./assets/rest2.jpg";
+import inside from "./assets/inside.jpeg";
 import juice from "./assets/juice.svg";
 import tea from "./assets/tea.svg";
 import vegetables from "./assets/vegetables.svg";
@@ -30,7 +30,7 @@ export const AboutUs = () => {
       <Section secondBanner />
       <Wrapper aboutWrapper>
         <WrapperInner>
-          <Image aboutImage src={rest2} alt="restaurant" />
+          <Image aboutImage src={inside} alt="restaurant" />
           <DescriptionBox>
             <Name>About Our Restaurant</Name>
             <Description sentence>
