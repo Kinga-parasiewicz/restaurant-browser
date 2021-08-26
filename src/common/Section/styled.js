@@ -6,7 +6,7 @@ export const Image = styled.img`
   ${({ aboutImage }) =>
     aboutImage &&
     css`
-      max-width: 700px;
+      max-width: 750px;
     `}
 `;
 
