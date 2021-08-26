@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import banner from "./../../assets/backg.jpg";
-import inside from "./../../assets/inside.jpeg";
+import rest2 from "./../../assets/rest2.jpg";
 
 export const Section = styled.section`
   background: url(${banner});
@@ -17,11 +17,11 @@ export const Section = styled.section`
   ${({ secondBanner }) =>
     secondBanner &&
     css`
-      background: url(${inside});
+      background: url(${rest2});
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      height: 50vh;
+      height: 70vh;
     `}
 `;
 
