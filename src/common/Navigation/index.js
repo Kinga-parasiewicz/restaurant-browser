@@ -6,8 +6,10 @@ import {
   NavigationList,
   Header,
   NavigationInner,
+  StyledLink,
 } from "./styled";
 import { StyledButton } from "../Button";
+import { toHome, toAbout, toContact, toGallery, toMenu } from "./../../routes";
 
 export const Navigation = () => {
   return (
@@ -19,11 +21,25 @@ export const Navigation = () => {
             <TypeName>Italian Restaurant</TypeName>
           </Header>
           <NavigationList>
-            <ListItem>Home</ListItem>
-            <ListItem>About</ListItem>
-            <ListItem>Menu</ListItem>
-            <ListItem>Gallery</ListItem>
-            <ListItem>Contact</ListItem>
+            <ListItem>
+              <StyledLink to={toHome()}>Home</StyledLink>
+            </ListItem>
+            <ListItem>
+              {" "}
+              <StyledLink to={toAbout()}>About</StyledLink>
+            </ListItem>
+            <ListItem>
+              {" "}
+              <StyledLink to={toMenu()}>Menu</StyledLink>
+            </ListItem>
+            <ListItem>
+              {" "}
+              <StyledLink to={toGallery()}>Gallery</StyledLink>
+            </ListItem>
+            <ListItem>
+              {" "}
+              <StyledLink to={toContact()}>Contact</StyledLink>
+            </ListItem>
           </NavigationList>
           <StyledButton>Book now</StyledButton>
         </NavigationInner>
