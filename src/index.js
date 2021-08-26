@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Home from "./Home";
+import { App } from "./App";
 import { Normalize } from "styled-normalize";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
     <Normalize />
-    <Home />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
