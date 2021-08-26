@@ -16,7 +16,10 @@ import {
   DescriptionParagraph,
   Name,
   ImagesSvg,
-  GridBox
+  ImagesBox,
+  GridBox,
+  Container,
+  SubName,
 } from "./features/About/styled";
 import { Description } from "./common/Section/styled";
 
@@ -49,41 +52,66 @@ export const AboutUs = () => {
         </WrapperInner>
       </Wrapper>
       <Name>Why People Choose Us</Name>
-      <GridBox>
-        <div>
-          <ImagesSvg src={juice} alt="drink" />
-          <h3>Friendly Team</h3>
-          <p>Morbi tristique senectus et netus et malesuada fames ac turpis.</p>
-        </div>
-        <div>
-          <ImagesSvg src={vegetables} alt="food" />
-          <h3>Fresh Food</h3>
-          <p>Cum resistentia mori, omnes elevatuses imperium plac.</p>
-        </div>
-        <div>
-          <ImagesSvg src={soup} alt="soup" />
-          <h3>Quality Cuisine</h3>
-          <p>Cum consilium accelerare, omnes absolutioes quaestio fatalis.</p>
-        </div>
-        <div>
-          <ImagesSvg src={muffin} alt="muffins" />
-          <h3>Best Service</h3>
-          <p>Cum onus studere, omnes consiliumes amor plac.</p>
-        </div>
-        <div>
-           <ImagesSvg src={tea} alt="tea" />
-          <h3>Diverse Menu</h3>
-          <p>Cum demolitione persuadere, omnes devatioes captis.</p>
-        </div>
-        <div>
-          <ImagesSvg src={pizza} alt="pizza" />
-          <h3>Affordable Prices</h3>
-          <p>
-            Mirabilis, gratis devatios mechanice contactus de neuter, primus
-            vigil.
-          </p>
-        </div>
-      </GridBox>
+      <Container>
+        <GridBox>
+          <ImagesBox>
+            <ImagesSvg src={juice} alt="drink" />
+            <DescriptionParagraph as="div" primary>
+              <SubName>Friendly Team</SubName>
+              <Description forAbout>
+                Morbi tristique senectus et netus et malesuada fames ac turpis.
+              </Description>
+            </DescriptionParagraph>
+          </ImagesBox>
+          <ImagesBox>
+            <ImagesSvg src={vegetables} alt="food" />
+            <DescriptionParagraph as="div" primary>
+              <SubName>Fresh Food</SubName>
+              <Description forAbout>
+                Cum resistentia mori, omnes elevatuses imperium plac.
+              </Description>
+            </DescriptionParagraph>
+          </ImagesBox>
+
+          <ImagesBox>
+            <ImagesSvg src={soup} alt="soup" />
+            <DescriptionParagraph as="div" primary>
+              <SubName>Quality Cuisine</SubName>
+              <Description forAbout>
+                Cum consilium accelerare, omnes absolutioes quaestio fatalis.
+              </Description>
+            </DescriptionParagraph>
+          </ImagesBox>
+          <ImagesBox>
+            <ImagesSvg src={muffin} alt="muffins" />
+            <DescriptionParagraph as="div" primary>
+              <SubName>Best Service</SubName>
+              <Description forAbout>
+                Cum onus studere, omnes consiliumes amor plac.
+              </Description>
+            </DescriptionParagraph>
+          </ImagesBox>
+          <ImagesBox>
+            <ImagesSvg src={tea} alt="tea" primary />
+            <DescriptionParagraph as="div" primary>
+              <SubName>Diverse Menu</SubName>
+              <Description forAbout>
+                Cum demolitione persuadere, omnes devatioes captis.
+              </Description>
+            </DescriptionParagraph>
+          </ImagesBox>
+          <ImagesBox>
+            <ImagesSvg src={pizza} alt="pizza" />
+            <DescriptionParagraph as="div" primary>
+              <SubName>Affordable Prices</SubName>
+              <Description forAbout>
+                Mirabilis, gratis devatios mechanice contactus de neuter, primus
+                vigil.
+              </Description>
+            </DescriptionParagraph>
+          </ImagesBox>
+        </GridBox>
+      </Container>
       <Name>Testimonials</Name>
 
       <Footer />
