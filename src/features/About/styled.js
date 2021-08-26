@@ -60,5 +60,5 @@ export const SubName = styled.h3`
 `;
 export const Container = styled.div`
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 30px auto;
 `;
