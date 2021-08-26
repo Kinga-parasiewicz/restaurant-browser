@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const StyledNavigation = styled.nav`
 position:fixed;
@@ -53,4 +54,18 @@ display:flex;
 
 export const Header = styled.header`
 margin: 10px;
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: 500;
+  
+  &:hover {
+    color:blue;
+    border-bottom: 2px solid blue;
+  }
 `;
