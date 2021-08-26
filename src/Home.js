@@ -5,7 +5,7 @@ import { About } from "./features/About";
 import { Footer } from "./common/Footer";
 import { Section } from "./common/Section";
 
-function Home() {
+export const Home = () => {
   return (
     <>
       <Navigation />
@@ -18,4 +18,4 @@ function Home() {
   );
 }
 
-export default Home;
+ 
