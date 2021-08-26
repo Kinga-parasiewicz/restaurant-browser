@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const StyledForm = styled.form`
   background: white;
@@ -12,6 +12,11 @@ export const StyledForm = styled.form`
   margin: -110px auto;
   z-index:2;
   position:relative;
+
+  ${({otherForm}) =>otherForm && css `
+  margin: 0 auto;
+  flex-direction:column;
+  `}
 `;
 
 export const FormLabel = styled.label`
