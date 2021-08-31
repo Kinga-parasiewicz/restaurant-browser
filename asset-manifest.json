@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.js": "/restaurant-browser/static/js/main.4a080a78.chunk.js",
+    "main.js.map": "/restaurant-browser/static/js/main.4a080a78.chunk.js.map",
+    "runtime-main.js": "/restaurant-browser/static/js/runtime-main.ecfda297.js",
+    "runtime-main.js.map": "/restaurant-browser/static/js/runtime-main.ecfda297.js.map",
+    "static/js/2.e00a7dce.chunk.js": "/restaurant-browser/static/js/2.e00a7dce.chunk.js",
+    "static/js/2.e00a7dce.chunk.js.map": "/restaurant-browser/static/js/2.e00a7dce.chunk.js.map",
+    "static/js/3.63b26273.chunk.js": "/restaurant-browser/static/js/3.63b26273.chunk.js",
+    "static/js/3.63b26273.chunk.js.map": "/restaurant-browser/static/js/3.63b26273.chunk.js.map",
+    "index.html": "/restaurant-browser/index.html",
+    "static/js/2.e00a7dce.chunk.js.LICENSE.txt": "/restaurant-browser/static/js/2.e00a7dce.chunk.js.LICENSE.txt",
+    "static/media/backg.fa12a107.jpg": "/restaurant-browser/static/media/backg.fa12a107.jpg",
+    "static/media/black-pasta-scaled.00fa01a8.jpg": "/restaurant-browser/static/media/black-pasta-scaled.00fa01a8.jpg",
+    "static/media/facebook.29489f1d.svg": "/restaurant-browser/static/media/facebook.29489f1d.svg",
+    "static/media/gelato.ad9051fa.jpg": "/restaurant-browser/static/media/gelato.ad9051fa.jpg",
+    "static/media/inside.4189ac6c.jpeg": "/restaurant-browser/static/media/inside.4189ac6c.jpeg",
+    "static/media/instagram.4b8e204f.svg": "/restaurant-browser/static/media/instagram.4b8e204f.svg",
+    "static/media/juice.6ee89fbe.svg": "/restaurant-browser/static/media/juice.6ee89fbe.svg",
+    "static/media/muffin.fbc741fa.svg": "/restaurant-browser/static/media/muffin.fbc741fa.svg",
+    "static/media/pizza.f710b60b.svg": "/restaurant-browser/static/media/pizza.f710b60b.svg",
+    "static/media/ravioli.da3a4a5f.jpg": "/restaurant-browser/static/media/ravioli.da3a4a5f.jpg",
+    "static/media/rest2.c160a01e.jpg": "/restaurant-browser/static/media/rest2.c160a01e.jpg",
+    "static/media/restaurant.f429117e.jpg": "/restaurant-browser/static/media/restaurant.f429117e.jpg",
+    "static/media/soup.6db26b81.svg": "/restaurant-browser/static/media/soup.6db26b81.svg",
+    "static/media/tea.82a9546e.svg": "/restaurant-browser/static/media/tea.82a9546e.svg",
+    "static/media/vegetables.ceb5528b.svg": "/restaurant-browser/static/media/vegetables.ceb5528b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ecfda297.js",
+    "static/js/2.e00a7dce.chunk.js",
+    "static/js/main.4a080a78.chunk.js"
+  ]
+}
