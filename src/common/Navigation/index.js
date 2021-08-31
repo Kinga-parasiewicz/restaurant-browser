@@ -25,19 +25,15 @@ export const Navigation = () => {
               <StyledLink to={toHome()}>Home</StyledLink>
             </ListItem>
             <ListItem>
-              {" "}
               <StyledLink to={toAbout()}>About</StyledLink>
             </ListItem>
             <ListItem>
-              {" "}
               <StyledLink to={toMenu()}>Menu</StyledLink>
             </ListItem>
             <ListItem>
-              {" "}
               <StyledLink to={toGallery()}>Gallery</StyledLink>
             </ListItem>
             <ListItem>
-              {" "}
               <StyledLink to={toContact()}>Contact</StyledLink>
             </ListItem>
           </NavigationList>
