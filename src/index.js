@@ -3,9 +3,11 @@ import ReactDOM from "react-dom";
 import { App } from "./App";
 import { Normalize } from "styled-normalize";
 import reportWebVitals from "./reportWebVitals";
+import { GlobalStyle } from "./GlobalStyle";
 
 ReactDOM.render(
   <React.StrictMode>
+    <GlobalStyle/>
     <Normalize />
     <App />
   </React.StrictMode>,
