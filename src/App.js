@@ -3,7 +3,7 @@ import { Navigation } from "./common/Navigation/index";
 import { Home } from "./Home";
 import { AboutUs } from "./About";
 import { Contact } from "./Contact";
-import { Gallery } from "./Gallery";
+import { Gallery } from "./features/Gallery/Gallery";
 import { Menu } from "./features/Menu/Menu";
 import { toHome, toAbout, toContact, toGallery, toMenu } from "./routes";
 
