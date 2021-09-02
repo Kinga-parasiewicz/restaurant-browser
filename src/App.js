@@ -3,6 +3,7 @@ import { Navigation } from "./common/Navigation/index";
 import { Home } from "./Home";
 import { AboutUs } from "./About";
 import { Contact } from "./Contact";
+import { Menu } from "./features/Menu/Menu";
 import { toHome, toAbout, toContact, toGallery, toMenu } from "./routes";
 
 export const App = () => (
@@ -15,7 +16,9 @@ export const App = () => (
       <Route path={toAbout()}>
         <AboutUs />
       </Route>
-      <Route path={toMenu()}></Route>
+      <Route path={toMenu()}>
+        <Menu/>
+      </Route>
       <Route path={toGallery()}></Route>
       <Route path={toContact()}>
         <Contact/>
