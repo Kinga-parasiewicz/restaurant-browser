@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import banner from "./../../assets/backg.jpg";
 import rest2 from "./../../assets/rest2.jpg";
+import Menu from "./../../features/Menu/image.jpeg";
 
 export const Section = styled.section`
   background: url(${banner});
@@ -23,7 +24,16 @@ export const Section = styled.section`
       background-repeat: no-repeat;
       height: 70vh;
     `}
-`;
+
+  ${({thirdBanner}) => thirdBanner && css `
+  background: url(${Menu});
+  background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 70vh;
+      
+  
+  `}`;
 
 export const SectionName = styled.h1`
   margin-top: 200px;
