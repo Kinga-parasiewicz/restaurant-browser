@@ -1,4 +1,3 @@
-import { Navigation } from "./common/Navigation";
 import { Footer } from "./common/Footer";
 import { Section } from "./common/Banner/styled";
 import inside from "./assets/inside.jpeg";
