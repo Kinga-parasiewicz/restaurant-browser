@@ -68,4 +68,15 @@ export const StyledLink = styled(Link)`
     color:blue;
     border-bottom: 2px solid blue;
   }
+
+  ${({secondary }) => secondary && css`
+  font-weight:800;
+  color: white;
+  transition: color 1s;
+
+  &:hover {
+    color:grey;
+    border-bottom:none;
+  }
+  `}
 `;
