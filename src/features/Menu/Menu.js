@@ -5,13 +5,17 @@ import { menuData } from "./menuData";
 import { Footer } from "../../common/Footer";
 import { WrapperMenu, NavigationList, NavigationItem } from "./styled";
 import { StyledLink } from "../../common/Navigation/styled";
+import { Section } from "./../../common/Banner/styled";
+import { FoodName } from "./styled";
 
 export const Menu = () => {
   let { path, url } = useRouteMatch();
   return (
     <>
+      <Section thirdBanner />
       <Wrapper>
         <WrapperMenu>
+          <FoodName>Check our Menu and click below</FoodName>
           <NavigationList>
             {menuData.map(({ name, id }) => (
               <NavigationItem key={id}>
