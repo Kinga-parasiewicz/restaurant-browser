@@ -18,13 +18,13 @@ export const App = () => (
         <AboutUs />
       </Route>
       <Route path={toMenu()}>
-        <Menu/>
+        <Menu />
       </Route>
       <Route path={toGallery()}>
-        <Gallery/>
+        <Gallery />
       </Route>
       <Route path={toContact()}>
-        <Contact/>
+        <Contact />
       </Route>
       <Route>
         <Redirect to={toHome()} />
