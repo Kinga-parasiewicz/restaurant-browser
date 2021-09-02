@@ -54,4 +54,4 @@ export const NameImages = styled.p`
   font-size: 22px;
 `;
 
-export const SingleImageBox = styled.div``;
+
