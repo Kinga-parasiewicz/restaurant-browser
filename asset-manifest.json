@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.js": "/restaurant-browser/static/js/main.4a080a78.chunk.js",
-    "main.js.map": "/restaurant-browser/static/js/main.4a080a78.chunk.js.map",
+    "main.js": "/restaurant-browser/static/js/main.9aac82dc.chunk.js",
+    "main.js.map": "/restaurant-browser/static/js/main.9aac82dc.chunk.js.map",
     "runtime-main.js": "/restaurant-browser/static/js/runtime-main.ecfda297.js",
     "runtime-main.js.map": "/restaurant-browser/static/js/runtime-main.ecfda297.js.map",
-    "static/js/2.e00a7dce.chunk.js": "/restaurant-browser/static/js/2.e00a7dce.chunk.js",
-    "static/js/2.e00a7dce.chunk.js.map": "/restaurant-browser/static/js/2.e00a7dce.chunk.js.map",
+    "static/js/2.eebdcbc2.chunk.js": "/restaurant-browser/static/js/2.eebdcbc2.chunk.js",
+    "static/js/2.eebdcbc2.chunk.js.map": "/restaurant-browser/static/js/2.eebdcbc2.chunk.js.map",
     "static/js/3.63b26273.chunk.js": "/restaurant-browser/static/js/3.63b26273.chunk.js",
     "static/js/3.63b26273.chunk.js.map": "/restaurant-browser/static/js/3.63b26273.chunk.js.map",
     "index.html": "/restaurant-browser/index.html",
-    "static/js/2.e00a7dce.chunk.js.LICENSE.txt": "/restaurant-browser/static/js/2.e00a7dce.chunk.js.LICENSE.txt",
+    "static/js/2.eebdcbc2.chunk.js.LICENSE.txt": "/restaurant-browser/static/js/2.eebdcbc2.chunk.js.LICENSE.txt",
     "static/media/backg.fa12a107.jpg": "/restaurant-browser/static/media/backg.fa12a107.jpg",
     "static/media/black-pasta-scaled.00fa01a8.jpg": "/restaurant-browser/static/media/black-pasta-scaled.00fa01a8.jpg",
     "static/media/facebook.29489f1d.svg": "/restaurant-browser/static/media/facebook.29489f1d.svg",
     "static/media/gelato.ad9051fa.jpg": "/restaurant-browser/static/media/gelato.ad9051fa.jpg",
+    "static/media/image.da3a01bd.jpeg": "/restaurant-browser/static/media/image.da3a01bd.jpeg",
+    "static/media/image1.94f07f4e.jpg": "/restaurant-browser/static/media/image1.94f07f4e.jpg",
+    "static/media/image2.049b9bbb.jpg": "/restaurant-browser/static/media/image2.049b9bbb.jpg",
+    "static/media/image3.a9d4a836.jpg": "/restaurant-browser/static/media/image3.a9d4a836.jpg",
+    "static/media/image4.edd2d5cd.jpg": "/restaurant-browser/static/media/image4.edd2d5cd.jpg",
+    "static/media/image5.6ff7b27a.jpg": "/restaurant-browser/static/media/image5.6ff7b27a.jpg",
+    "static/media/image6.9ffb3051.png": "/restaurant-browser/static/media/image6.9ffb3051.png",
+    "static/media/image7.ad652e44.jpg": "/restaurant-browser/static/media/image7.ad652e44.jpg",
     "static/media/inside.4189ac6c.jpeg": "/restaurant-browser/static/media/inside.4189ac6c.jpeg",
     "static/media/instagram.4b8e204f.svg": "/restaurant-browser/static/media/instagram.4b8e204f.svg",
     "static/media/juice.6ee89fbe.svg": "/restaurant-browser/static/media/juice.6ee89fbe.svg",
@@ -28,7 +36,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ecfda297.js",
-    "static/js/2.e00a7dce.chunk.js",
-    "static/js/main.4a080a78.chunk.js"
+    "static/js/2.eebdcbc2.chunk.js",
+    "static/js/main.9aac82dc.chunk.js"
   ]
 }
