@@ -38,7 +38,7 @@ export const menuData = [
     id: "desserts",
     resources: [
       {
-        name: "Tiramusu",
+        name: "Tiramisu",
         id:5,
         price: 25,
         description:
