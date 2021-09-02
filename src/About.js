@@ -26,7 +26,7 @@ import { Description } from "./common/Section/styled";
 export const AboutUs = () => {
   return (
     <>
-      <Navigation />
+   
       <Section secondBanner />
       <Wrapper aboutWrapper>
         <WrapperInner>
