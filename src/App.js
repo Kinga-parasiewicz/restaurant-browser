@@ -1,11 +1,11 @@
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
-import { Navigation } from "./common/Navigation/index";
-import { Home } from "./Home";
-import { AboutUs } from "./About";
-import { Contact } from "./Contact";
+import { Navigation } from "./core/Navigation";
+import { Home } from "./features/Home/Home";
+import { AboutUs } from "./features/About/About";
+import { Contact } from "./features/Contact";
 import { Gallery } from "./features/Gallery/Gallery";
 import { Menu } from "./features/Menu/Menu";
-import { toHome, toAbout, toContact, toGallery, toMenu } from "./routes";
+import { toHome, toAbout, toContact, toGallery, toMenu } from "./core/routes";
 
 export const App = () => (
   <HashRouter>
