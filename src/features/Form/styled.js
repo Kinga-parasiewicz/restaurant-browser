@@ -7,7 +7,7 @@ export const StyledForm = styled.form`
   justify-content: space-between;
   max-width: 1000px;
   align-items: center;
-  padding: 35px;
+  padding: 25px 10px;
   padding-bottom:20px;
   margin: -110px auto;
   z-index:2;
