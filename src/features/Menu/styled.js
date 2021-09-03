@@ -33,11 +33,19 @@ export const BoxName = styled.div`
 export const FoodName = styled.h2`
   font-size: 26px;
   margin-right: 15px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const Price = styled.h3`
   font-size: 24px;
   color: green;
+  @media (max-width: 768px) {
+    font-size: 20px;
+    margin-top:16px;
+  }
 `;
 
 export const FoodDescription = styled.p`
