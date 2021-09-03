@@ -1,13 +1,12 @@
-import { Footer } from "./common/Footer";
-import { Section } from "./common/Banner/styled";
-import inside from "./assets/inside.jpeg";
-import juice from "./assets/juice.svg";
-import tea from "./assets/tea.svg";
-import vegetables from "./assets/vegetables.svg";
-import muffin from "./assets/muffin.svg";
-import pizza from "./assets/pizza.svg";
-import soup from "./assets/soup.svg";
-import { Image } from "./common/Section/styled";
+import { Footer } from "../../common/Footer";
+import { Section } from "../../common/Banner/styled";
+import inside from "./inside.jpeg";
+import juice from "./juice.svg";
+import tea from "./tea.svg";
+import vegetables from "./vegetables.svg";
+import muffin from "./muffin.svg";
+import pizza from "./pizza.svg";
+import soup from "./soup.svg";
 import {
   Wrapper,
   WrapperInner,
@@ -19,8 +18,8 @@ import {
   GridBox,
   Container,
   SubName,
-} from "./features/About/styled";
-import { Description } from "./common/Section/styled";
+} from "./About-partOfPage/styled";
+import { Description, Image } from "./../../core/Section/styled";
 
 export const AboutUs = () => {
   return (
@@ -28,7 +27,7 @@ export const AboutUs = () => {
    
       <Section secondBanner />
       <Wrapper aboutWrapper>
-        <WrapperInner>
+        <WrapperInner paddingWrapper>
           <Image aboutImage src={inside} alt="restaurant" />
           <DescriptionBox>
             <Name>About Our Restaurant</Name>

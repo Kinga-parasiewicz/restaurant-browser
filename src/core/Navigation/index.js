@@ -7,9 +7,11 @@ import {
   Header,
   NavigationInner,
   StyledLink,
+  Hamburger,
 } from "./styled";
-import { StyledButton } from "../Button";
-import { toHome, toAbout, toContact, toGallery, toMenu } from "./../../routes";
+import { StyledButton } from "./../../common/Button";
+import { toHome, toAbout, toContact, toGallery, toMenu } from "./../routes";
+import hamburger from "./../../assets/hamburger.svg"
 
 export const Navigation = () => {
   return (
@@ -38,6 +40,7 @@ export const Navigation = () => {
             </ListItem>
           </NavigationList>
           <StyledButton>Book now</StyledButton>
+          <Hamburger src={hamburger} alt="hamburger"/>
         </NavigationInner>
       </StyledNavigation>
     </>

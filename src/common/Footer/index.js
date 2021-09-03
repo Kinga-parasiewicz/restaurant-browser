@@ -1,6 +1,6 @@
-import { NameRestaurant, TypeName } from "./../Navigation/styled";
-import facebook from "./../../assets/social icons/facebook.svg";
-import instagram from "./../../assets/social icons/instagram.svg";
+import { NameRestaurant, TypeName } from "./../../core/Navigation/styled";
+import facebook from "./social icons/facebook.svg";
+import instagram from "./social icons/instagram.svg";
 import { StyledFooter, Image } from "./styled";
 
 export const Footer = () => (

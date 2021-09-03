@@ -1,9 +1,8 @@
-import { Container } from "./features/About/styled";
-import { Section } from "./common/Banner/styled";
-import { Name } from "./features/About/styled";
-import { Footer } from "./common/Footer/index";
-import { StyledForm, FormInput } from "./features/Form/styled";
-import { StyledButton } from "./common/Button";
+import { Section } from "../common/Banner/styled";
+import { Name, Container } from "./About/About-partOfPage/styled";
+import { Footer } from "../common/Footer/index";
+import { StyledForm, FormInput } from "./Form/styled";
+import { StyledButton } from "../common/Button";
 
 export const Contact = () => {
   return (
