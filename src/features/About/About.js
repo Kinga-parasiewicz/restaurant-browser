@@ -1,5 +1,6 @@
 import { Footer } from "../../common/Footer";
-import { Section } from "../../common/Banner/styled";
+import { useState } from "react";
+import { Section } from "./../../common/Banner/styled";
 import inside from "./inside.jpeg";
 import juice from "./juice.svg";
 import tea from "./tea.svg";
@@ -7,6 +8,7 @@ import vegetables from "./vegetables.svg";
 import muffin from "./muffin.svg";
 import pizza from "./pizza.svg";
 import soup from "./soup.svg";
+import { People } from "./People";
 import {
   Wrapper,
   WrapperInner,
@@ -18,13 +20,18 @@ import {
   GridBox,
   Container,
   SubName,
+  Testimonials,
+  TestimonialBox,
+  TestimonialImage,
+  Box,
 } from "./About-partOfPage/styled";
 import { Description, Image } from "./../../core/Section/styled";
 
 export const AboutUs = () => {
+  const [activeId, setActiveId] = useState("0");
+
   return (
     <>
-   
       <Section secondBanner />
       <Wrapper aboutWrapper>
         <WrapperInner paddingWrapper>
@@ -110,8 +117,32 @@ export const AboutUs = () => {
           </ImagesBox>
         </GridBox>
       </Container>
-      <Name>Testimonials</Name>
-
+      <Testimonials>
+        <Name colorName>Testimonials</Name>
+        <TestimonialBox>
+          {People.map(({ name, description, id, image }) => (
+            <>
+              <Box key={id} className={id === activeId ? "active" : "inactive"}>
+                <DescriptionParagraph colorDescription key={id}>
+                  {description}
+                </DescriptionParagraph>
+                <DescriptionParagraph colorDescription>
+                  {name}
+                </DescriptionParagraph>
+              </Box>
+              <TestimonialImage
+                onClick={() => {
+                  setActiveId(id);
+                }}
+                otherImage
+                key={id}
+                src={image}
+                alt="person"
+              />
+            </>
+          ))}
+        </TestimonialBox>
+      </Testimonials>
       <Footer />
     </>
   );
