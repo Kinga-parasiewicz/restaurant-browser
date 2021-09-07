@@ -7,6 +7,14 @@ export const Image = styled.img`
     aboutImage &&
     css`
       max-width: 750px;
+
+      @media (max-width: 1024px) {
+        height: 400px;
+      }
+
+      @media (max-width: 767px) {
+        display: none;
+      }
     `}
 
   ${({ lastImage }) =>
@@ -14,10 +22,6 @@ export const Image = styled.img`
     css`
       max-width: 355px;
     `}
-
-    @media(max-width:768px) {
-    max-width: 270px;
-  }
 `;
 
 export const ImagesBox = styled.div`
@@ -60,11 +64,12 @@ export const Description = styled.p`
       text-align: left;
       margin: 5px 0 20px 5px;
       font-weight: 100;
+  
+  }
     `}
 
     @media(max-width:768px) {
     justify-content: center;
-    max-width: 300px;
     margin: 0 auto;
   }
 `;
