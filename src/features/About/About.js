@@ -56,8 +56,9 @@ export const AboutUs = () => {
           </DescriptionBox>
         </WrapperInner>
       </Wrapper>
-      <Name>Why People Choose Us</Name>
+     
       <Container>
+      <Name>Why People Choose Us</Name>
         <GridBox>
           <ImagesBox>
             <ImagesSvg src={juice} alt="drink" />
