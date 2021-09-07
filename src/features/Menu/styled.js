@@ -12,6 +12,10 @@ export const NavigationList = styled.ul`
   align-items: center;
   background-color: #323539;
   margin: 0px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const NavigationItem = styled.li`
@@ -24,6 +28,10 @@ export const ContainerDish = styled.div`
   background: white;
   padding: 50px 80px;
   text-align: center;
+
+  @media (max-width: 767px) {
+    padding: 20px 30px;
+  }
 `;
 export const BoxName = styled.div`
   display: flex;
@@ -44,7 +52,7 @@ export const Price = styled.h3`
   color: green;
   @media (max-width: 768px) {
     font-size: 20px;
-    margin-top:16px;
+    margin-top: 16px;
   }
 `;
 
