@@ -78,6 +78,7 @@ export const DescriptionParagraph = styled.p`
       margin: 35px auto;
       font-size: 24px;
       text-align: center;
+      line-height: 1.6;
     `}
 
   @media(max-width:768px) {
