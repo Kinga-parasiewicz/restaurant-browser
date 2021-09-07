@@ -8,6 +8,6 @@ html {
   box-sizing: inherit;
 }
 body {
-    background-color: #efeeeb;
+    background-color: #D9D9D9;
 }
 `;
