@@ -28,7 +28,7 @@ import {
 import { Description, Image } from "./../../core/Section/styled";
 
 export const AboutUs = () => {
-  const [activeId, setActiveId] = useState("0");
+  const [activeId, setActiveId] = useState(0);
 
   return (
     <>
@@ -130,6 +130,7 @@ export const AboutUs = () => {
                   {name}
                 </DescriptionParagraph>
               </Box>
+
               <TestimonialImage
                 onClick={() => {
                   setActiveId(id);
