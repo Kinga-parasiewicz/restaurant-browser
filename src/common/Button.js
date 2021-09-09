@@ -9,6 +9,10 @@ export const StyledButton = styled.button`
   border: 1px solid white;
   z-index: 2;
 
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
   ${({ sectionButton }) =>
     sectionButton &&
     css`
