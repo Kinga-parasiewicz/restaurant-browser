@@ -3,11 +3,10 @@ import styled, { css } from "styled-components";
 export const StyledForm = styled.form`
   background: white;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: 1100px;
   align-items: center;
-  padding: 25px 10px;
+  padding: 10px 10px;
   padding-bottom: 20px;
   margin: -110px auto;
   z-index: 0;
@@ -29,13 +28,14 @@ export const FormLabel = styled.label`
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
-  margin: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
 `;
 
 export const FormInput = styled.input`
   border: none;
   border-bottom: 1px solid #323539;
-  margin-top: 15px;
+  margin-top: 5px;
   height: 30px;
 
   ${({ contactInput }) =>
@@ -44,7 +44,7 @@ export const FormInput = styled.input`
       max-width: 800px;
       width: 100%;
       height: 40px;
-      margin-bottom: 25px;
+      margin: 20px 0px;
       resize: vertical;
     `}
 `;
@@ -54,4 +54,17 @@ export const Select = styled.select`
   border-bottom: 1px solid #323539;
   margin: 7px auto;
   padding-right: 15px;
+`;
+export const FormWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px;
+  padding: 0px;
+
+  ${({ contactItems }) =>
+    contactItems &&
+    css`
+      max-width: 800px;
+      width: 100%;
+    `}
 `;
