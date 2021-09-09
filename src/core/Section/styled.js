@@ -72,14 +72,20 @@ export const Description = styled.p`
       text-align: left;
       margin: 5px 0 20px 5px;
       font-weight: 100;
-  
-  }
     `}
 
     @media(max-width:768px) {
     justify-content: center;
     margin: 0 auto;
   }
+
+  ${({ forForm }) =>
+    forForm &&
+    css`
+      text-align: center;
+      margin: 5px 0 10px 5px;
+      font-weight: 100;
+    `}
 `;
 
 export const BoxDescription = styled.div`
