@@ -44,11 +44,13 @@ export const Navigation = () => {
               <StyledLink to={toGallery()}>Gallery</StyledLink>
             </ListItem>
             <ListItem>
-              <StyledLink onClick={handleToggle} to={toContact()}>
+              <StyledLink to={toContact()}>
                 Contact
               </StyledLink>
             </ListItem>
-            <StyledButton>Book now</StyledButton>
+            <StyledButton>
+              <StyledLink secondary to={toContact()}>Book now</StyledLink>
+              </StyledButton>
           </NavigationList>
           <HamburgerButton onClick={handleToggle}>
             <Hamburger src={hamburger} alt="hamburger" />
