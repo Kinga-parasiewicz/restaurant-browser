@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.js": "/restaurant-browser/static/js/main.9aac82dc.chunk.js",
-    "main.js.map": "/restaurant-browser/static/js/main.9aac82dc.chunk.js.map",
-    "runtime-main.js": "/restaurant-browser/static/js/runtime-main.ecfda297.js",
-    "runtime-main.js.map": "/restaurant-browser/static/js/runtime-main.ecfda297.js.map",
-    "static/js/2.eebdcbc2.chunk.js": "/restaurant-browser/static/js/2.eebdcbc2.chunk.js",
-    "static/js/2.eebdcbc2.chunk.js.map": "/restaurant-browser/static/js/2.eebdcbc2.chunk.js.map",
-    "static/js/3.63b26273.chunk.js": "/restaurant-browser/static/js/3.63b26273.chunk.js",
-    "static/js/3.63b26273.chunk.js.map": "/restaurant-browser/static/js/3.63b26273.chunk.js.map",
+    "main.js": "/restaurant-browser/static/js/main.db328f67.chunk.js",
+    "main.js.map": "/restaurant-browser/static/js/main.db328f67.chunk.js.map",
+    "runtime-main.js": "/restaurant-browser/static/js/runtime-main.f4431937.js",
+    "runtime-main.js.map": "/restaurant-browser/static/js/runtime-main.f4431937.js.map",
+    "static/js/2.e4e6a6bf.chunk.js": "/restaurant-browser/static/js/2.e4e6a6bf.chunk.js",
+    "static/js/2.e4e6a6bf.chunk.js.map": "/restaurant-browser/static/js/2.e4e6a6bf.chunk.js.map",
+    "static/js/3.f0135962.chunk.js": "/restaurant-browser/static/js/3.f0135962.chunk.js",
+    "static/js/3.f0135962.chunk.js.map": "/restaurant-browser/static/js/3.f0135962.chunk.js.map",
     "index.html": "/restaurant-browser/index.html",
-    "static/js/2.eebdcbc2.chunk.js.LICENSE.txt": "/restaurant-browser/static/js/2.eebdcbc2.chunk.js.LICENSE.txt",
+    "static/js/2.e4e6a6bf.chunk.js.LICENSE.txt": "/restaurant-browser/static/js/2.e4e6a6bf.chunk.js.LICENSE.txt",
     "static/media/backg.fa12a107.jpg": "/restaurant-browser/static/media/backg.fa12a107.jpg",
+    "static/media/background.54e3d8a5.jpg": "/restaurant-browser/static/media/background.54e3d8a5.jpg",
     "static/media/black-pasta-scaled.00fa01a8.jpg": "/restaurant-browser/static/media/black-pasta-scaled.00fa01a8.jpg",
     "static/media/facebook.29489f1d.svg": "/restaurant-browser/static/media/facebook.29489f1d.svg",
     "static/media/gelato.ad9051fa.jpg": "/restaurant-browser/static/media/gelato.ad9051fa.jpg",
+    "static/media/hamburger.19fb64e1.svg": "/restaurant-browser/static/media/hamburger.19fb64e1.svg",
     "static/media/image.da3a01bd.jpeg": "/restaurant-browser/static/media/image.da3a01bd.jpeg",
     "static/media/image1.94f07f4e.jpg": "/restaurant-browser/static/media/image1.94f07f4e.jpg",
     "static/media/image2.049b9bbb.jpg": "/restaurant-browser/static/media/image2.049b9bbb.jpg",
@@ -26,6 +28,9 @@
     "static/media/instagram.4b8e204f.svg": "/restaurant-browser/static/media/instagram.4b8e204f.svg",
     "static/media/juice.6ee89fbe.svg": "/restaurant-browser/static/media/juice.6ee89fbe.svg",
     "static/media/muffin.fbc741fa.svg": "/restaurant-browser/static/media/muffin.fbc741fa.svg",
+    "static/media/person.6b5cb10f.jpeg": "/restaurant-browser/static/media/person.6b5cb10f.jpeg",
+    "static/media/person2.1b587bbe.jpg": "/restaurant-browser/static/media/person2.1b587bbe.jpg",
+    "static/media/person3.5e27b43a.jpg": "/restaurant-browser/static/media/person3.5e27b43a.jpg",
     "static/media/pizza.f710b60b.svg": "/restaurant-browser/static/media/pizza.f710b60b.svg",
     "static/media/ravioli.da3a4a5f.jpg": "/restaurant-browser/static/media/ravioli.da3a4a5f.jpg",
     "static/media/rest2.c160a01e.jpg": "/restaurant-browser/static/media/rest2.c160a01e.jpg",
@@ -35,8 +40,8 @@
     "static/media/vegetables.ceb5528b.svg": "/restaurant-browser/static/media/vegetables.ceb5528b.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ecfda297.js",
-    "static/js/2.eebdcbc2.chunk.js",
-    "static/js/main.9aac82dc.chunk.js"
+    "static/js/runtime-main.f4431937.js",
+    "static/js/2.e4e6a6bf.chunk.js",
+    "static/js/main.db328f67.chunk.js"
   ]
 }
