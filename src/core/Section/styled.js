@@ -3,6 +3,10 @@ import styled, { css } from "styled-components";
 export const Image = styled.img`
   max-width: 400px;
 
+  @media (max-width: 1024px) {
+    max-width: 260px;
+  }
+
   ${({ aboutImage }) =>
     aboutImage &&
     css`
@@ -21,6 +25,10 @@ export const Image = styled.img`
     lastImage &&
     css`
       max-width: 355px;
+
+      @media (max-width: 1024px) {
+        max-width: 230px;
+      }
     `}
 `;
 

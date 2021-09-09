@@ -13,6 +13,10 @@ export const StyledForm = styled.form`
   z-index: 2;
   position: relative;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
   ${({ otherForm }) =>
     otherForm &&
     css`
@@ -34,13 +38,15 @@ export const FormInput = styled.input`
   margin-top: 15px;
   height: 30px;
 
-  ${({contactInput}) => contactInput && css`
-   max-width: 800px;
-   width:100%;
-   height:40px;
-   margin-bottom: 25px;
-   resize:vertical;
-  `}
+  ${({ contactInput }) =>
+    contactInput &&
+    css`
+      max-width: 800px;
+      width: 100%;
+      height: 40px;
+      margin-bottom: 25px;
+      resize: vertical;
+    `}
 `;
 
 export const Select = styled.select`

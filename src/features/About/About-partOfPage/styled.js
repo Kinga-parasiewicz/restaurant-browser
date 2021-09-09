@@ -100,6 +100,7 @@ export const DescriptionBox = styled.div`
   }
   @media (max-width: 1024px) {
     margin-left: 0px;
+    text-align: center;
     margin: 10px;
   }
 `;

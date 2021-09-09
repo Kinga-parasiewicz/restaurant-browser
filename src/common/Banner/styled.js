@@ -41,6 +41,12 @@ export const SectionName = styled.h1`
   color: black;
   margin-bottom: 20px;
   margin-left: -200px;
+
+  @media(max-width:767px){
+    font-size: 5em;
+    margin-top:110px;
+    margin-left:0px;
+  }
 `;
 
 export const SectionParagraph = styled.p`
@@ -49,4 +55,10 @@ export const SectionParagraph = styled.p`
   max-width: 500px;
   margin-left: -180px;
   margin-bottom: 50px;
+
+  @media(max-width:767px){
+    font-size: 16px;
+    margin:20px;
+    color:white;
+  }
 `;
