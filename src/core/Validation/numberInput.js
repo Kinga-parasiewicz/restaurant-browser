@@ -15,9 +15,9 @@ export const NumberInput = ({
   styledError,
 }) => {
   return (
-    <FormWrapper>
-      <FormLabel htmlFor="">{label}:</FormLabel>
-      <FormInput
+    <FormWrapper contactItems>
+      <FormLabel >{label}:</FormLabel>
+      <FormInput 
         placeholder={placeholder}
         type="number"
         min="9"

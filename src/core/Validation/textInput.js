@@ -15,9 +15,9 @@ export const TextInput = ({
   styledError,
 }) => {
   return (
-    <FormWrapper>
+    <FormWrapper contactItems >
       <FormLabel htmlFor="">{label}:</FormLabel>
-      <FormInput
+      <FormInput  
         placeholder={placeholder}
         style={errors.item ? styledError.input : null}
         {...register(value, { ...validation })}

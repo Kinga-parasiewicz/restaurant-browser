@@ -15,7 +15,7 @@ export const EmailInput = ({
   styledError,
 }) => {
   return (
-    <FormWrapper>
+    <FormWrapper contactItems>
       <FormLabel>{label}:</FormLabel>
       <FormInput
         placeholder={placeholder}
