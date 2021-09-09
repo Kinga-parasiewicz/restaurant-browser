@@ -8,7 +8,7 @@ export const StyledButton = styled.button`
   color: white;
   border: 1px solid white;
   z-index: 2;
-
+  cursor:pointer;
   @media (max-width: 1024px) {
     display: none;
   }
