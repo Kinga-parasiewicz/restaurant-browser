@@ -10,7 +10,7 @@ export const StyledForm = styled.form`
   padding: 25px 10px;
   padding-bottom: 20px;
   margin: -110px auto;
-  z-index: 2;
+  z-index: 0;
   position: relative;
 
   @media (max-width: 768px) {

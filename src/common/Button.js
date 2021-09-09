@@ -17,6 +17,7 @@ export const StyledButton = styled.button`
     sectionButton &&
     css`
       margin-left: -170px;
+      z-index:0;
     `}
 
   ${({ background }) =>
