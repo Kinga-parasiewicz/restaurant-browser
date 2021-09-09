@@ -27,5 +27,12 @@ export const StyledButton = styled.button`
       text-transform: uppercase;
       font-size: 17px;
       padding: 12px 40px;
+
+
+  @media (max-width: 1024px) {
+    display: block;
+    text-align: center;
+    margin:20px auto;
+  }
     `}
 `;
