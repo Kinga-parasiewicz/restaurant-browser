@@ -1,4 +1,18 @@
-# Getting Started with Create React App
+# Restaurant-browser
+Website about restaurant where you can find out more about this place, send request about reservation, contact with staff.
+You can see menu, gallery. 
+
+## Demo 
+https://kinga-parasiewicz.github.io/restaurant-browser/
+
+## Technologies 
+- Semantic HTML
+- CSS
+- React, create-react-app
+- React Hooks,
+- React Router,
+- Styled components,
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
