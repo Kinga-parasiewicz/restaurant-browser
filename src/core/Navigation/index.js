@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   NameRestaurant,
   TypeName,
@@ -8,12 +9,19 @@ import {
   NavigationInner,
   StyledLink,
   Hamburger,
+  HamburgerButton,
 } from "./styled";
 import { StyledButton } from "./../../common/Button";
 import { toHome, toAbout, toContact, toGallery, toMenu } from "./../routes";
-import hamburger from "./../../assets/hamburger.svg"
+import hamburger from "./../../assets/hamburger.svg";
 
 export const Navigation = () => {
+  const [isActive, setActive] = useState("inactive");
+
+  const handleToggle = () => {
+    setActive(isActive === "inactive" ? "active " : "inactive");
+  };
+
   return (
     <>
       <StyledNavigation>
@@ -22,7 +30,7 @@ export const Navigation = () => {
             <NameRestaurant>Anolini</NameRestaurant>
             <TypeName>Italian Restaurant</TypeName>
           </Header>
-          <NavigationList>
+          <NavigationList className={`${isActive}`} onClick={handleToggle}>
             <ListItem>
               <StyledLink to={toHome()}>Home</StyledLink>
             </ListItem>
@@ -36,11 +44,15 @@ export const Navigation = () => {
               <StyledLink to={toGallery()}>Gallery</StyledLink>
             </ListItem>
             <ListItem>
-              <StyledLink to={toContact()}>Contact</StyledLink>
+              <StyledLink onClick={handleToggle} to={toContact()}>
+                Contact
+              </StyledLink>
             </ListItem>
+            <StyledButton>Book now</StyledButton>
           </NavigationList>
-          <StyledButton>Book now</StyledButton>
-          <Hamburger src={hamburger} alt="hamburger"/>
+          <HamburgerButton onClick={handleToggle}>
+            <Hamburger src={hamburger} alt="hamburger" />
+          </HamburgerButton>
         </NavigationInner>
       </StyledNavigation>
     </>
