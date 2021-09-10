@@ -2,7 +2,7 @@ import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import { Navigation } from "./core/Navigation";
 import { Home } from "./features/Home/Home";
 import { AboutUs } from "./features/About/About";
-import { Contact } from "./features/Contact";
+import { Contact } from "./features/Contact/Contact";
 import { Gallery } from "./features/Gallery/Gallery";
 import { Menu } from "./features/Menu/Menu";
 import { toHome, toAbout, toContact, toGallery, toMenu } from "./core/routes";
