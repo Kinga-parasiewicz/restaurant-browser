@@ -1,8 +1,11 @@
 import { StyledButton } from "./../../common/Button";
 import { StyledForm, FormLabel, FormInput, Select } from "./styled";
 import { useForm } from "react-hook-form";
-import {TextInput} from "../../core/Validation/textInput";
-import { itemValidation ,numberValidation} from "./../../core/Validation/validation";
+import { TextInput } from "../../core/Validation/textInput";
+import {
+  itemValidation,
+  numberValidation,
+} from "./../../core/Validation/validation";
 import { styledError } from "./../../core/Validation/styledError";
 import { NumberInput } from "../../core/Validation/numberInput";
 
@@ -28,13 +31,13 @@ export const Form = () => {
           styledError={styledError}
         />
         <NumberInput
-        label="Phone*"
-        placeholder="your number"
-        value="number"
-        register={register}
-        validation={numberValidation}
-        errors={errors}
-        styledError={styledError}
+          label="Phone*"
+          placeholder="your number"
+          value="number"
+          register={register}
+          validation={numberValidation}
+          errors={errors}
+          styledError={styledError}
         />
         <FormLabel>
           Date*:
