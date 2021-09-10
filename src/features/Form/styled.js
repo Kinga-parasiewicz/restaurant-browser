@@ -1,8 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const StyledForm = styled.form`
-  
-   &.inactivefirst {
+  &.inactivefirst {
     background: white;
     display: flex;
     justify-content: space-between;
@@ -17,13 +16,18 @@ export const StyledForm = styled.form`
     @media (max-width: 768px) {
       flex-direction: column;
     }
-   }
-    &.inactive {
+  }
+  &.inactive {
     ${({ otherForm }) =>
       otherForm &&
       css`
+        display: flex;
         margin: 20px auto;
         flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 10px 10px;
+        padding-bottom: 20px;
       `}
   }
 
