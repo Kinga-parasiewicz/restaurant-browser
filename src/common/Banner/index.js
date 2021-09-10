@@ -13,7 +13,7 @@ export const Banner = () => {
           from our indoor covered patio and our outdoor sundeck.
         </SectionParagraph>
         <StyledButton sectionButton>
-        <StyledLink secondary to={toAbout()}>Meet us</StyledLink>
+        <StyledLink secondOption to={toAbout()}>Meet us</StyledLink>
         </StyledButton>
       </Section>
     </>

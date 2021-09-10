@@ -17,7 +17,7 @@ export const Menu = () => {
           <NavigationList>
             {menuData.map(({ name, id }) => (
               <NavigationItem key={id}>
-                <StyledLink secondary to={`${url}/${id}`}>
+                <StyledLink secondOption to={`${url}/${id}`}>
                   {name}
                 </StyledLink>
               </NavigationItem>

@@ -19,7 +19,7 @@ export const About = () => {
             committed to providing our guests with the best Italian Cuisine.
           </DescriptionParagraph>
           <StyledButton background >
-          <StyledLink secondary to={toAbout()}>Read more</StyledLink>
+          <StyledLink secondOption to={toAbout()}>Read more</StyledLink>
           </StyledButton>
         </DescriptionBox>
       </WrapperInner>

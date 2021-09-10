@@ -112,8 +112,8 @@ export const StyledLink = styled(Link)`
     }
   }
 
-  ${({ secondary }) =>
-    secondary &&
+  ${({ secondOption }) =>
+    secondOption &&
     css`
       font-weight: 800;
       color: white;

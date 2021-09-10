@@ -49,7 +49,7 @@ export const Navigation = () => {
               </StyledLink>
             </ListItem>
             <StyledButton>
-              <StyledLink secondary to={toContact()}>Book now</StyledLink>
+              <StyledLink secondOption to={toContact()}>Book now</StyledLink>
               </StyledButton>
           </NavigationList>
           <HamburgerButton onClick={handleToggle}>
