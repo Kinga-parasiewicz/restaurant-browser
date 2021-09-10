@@ -62,7 +62,7 @@ export const Description = styled.p`
     sentence &&
     css`
       font-size: 25px;
-      margin: 0px;
+      margin: 0px auto;
       max-width: 500px;
     `}
 
