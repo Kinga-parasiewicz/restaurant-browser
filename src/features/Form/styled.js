@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 export const StyledForm = styled.form`
   
+   &.inactivefirst {
     background: white;
     display: flex;
     justify-content: space-between;
@@ -16,6 +17,7 @@ export const StyledForm = styled.form`
     @media (max-width: 768px) {
       flex-direction: column;
     }
+   }
     &.inactive {
     ${({ otherForm }) =>
       otherForm &&
