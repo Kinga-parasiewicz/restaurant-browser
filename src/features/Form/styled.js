@@ -1,27 +1,33 @@
 import styled, { css } from "styled-components";
 
 export const StyledForm = styled.form`
-  background: white;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1100px;
-  align-items: center;
-  padding: 10px 10px;
-  padding-bottom: 20px;
-  margin: -110px auto;
-  z-index: 0;
-  position: relative;
+  &.inactive {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    align-items: center;
+    padding: 10px 10px;
+    padding-bottom: 20px;
+    margin: -110px auto;
+    z-index: 0;
+    position: relative;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    ${({ otherForm }) =>
+      otherForm &&
+      css`
+        margin: 20px auto;
+        flex-direction: column;
+      `}
   }
 
-  ${({ otherForm }) =>
-    otherForm &&
-    css`
-      margin: 20px auto;
-      flex-direction: column;
-    `}
+  &.active {
+    display: none;
+  }
 `;
 
 export const FormLabel = styled.label`
