@@ -138,9 +138,11 @@ export const HamburgerButton = styled.button`
 `;
 
 export const Hamburger = styled.img`
+  display: none;
   @media (max-width: 1024px) {
     display: block;
     margin: 10px;
     width: 40px;
+    height: 50px;
   }
 `;
