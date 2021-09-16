@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import pasta from "./../../../assets/background.jpg";
 
 export const Wrapper = styled.section`
-  background: #efeeeb;
+  background: ${({ theme }) => theme.colors.cararra};
   margin-top: 20px;
 
   ${({ aboutWrapper }) =>
@@ -11,9 +11,9 @@ export const Wrapper = styled.section`
       margin-top: 0px;
       padding: 30px;
       margin-bottom: 0px;
-      background-color: white;
+      background-color: ${({ theme }) => theme.colors.white};
 
-      @media (max-width: 768px) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         width: 100%;
       }
     `}
@@ -31,13 +31,13 @@ export const WrapperInner = styled.div`
     css`
       padding-top: 50px;
 
-      @media (max-width: 1024px) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.desktop}px) {
         flex-direction: column;
         align-items: center;
       }
     `}
 
-  @media(max-width:768px) {
+  @media(max-width:${({ theme }) => theme.breakpoints.tablet}px) {
     flex-direction: column;
   }
 `;
@@ -46,7 +46,7 @@ export const Name = styled.h2`
   font-size: 40px;
   text-align: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     text-align: center;
     font-size: 30px;
   }
@@ -56,9 +56,9 @@ export const Name = styled.h2`
     css`
       padding-top: 50px;
       font-size: 48px;
-      color: white;
+      color: ${({ theme }) => theme.colors.white};
 
-      @media (max-width: 768px) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         padding-top: 60px;
       }
     `}
@@ -78,7 +78,7 @@ export const DescriptionParagraph = styled.p`
   ${({ colorDescription }) =>
     colorDescription &&
     css`
-      color: white;
+      color: ${({ theme }) => theme.colors.white};
       max-width: 800px;
       margin: 35px auto;
       font-size: 24px;
@@ -86,7 +86,7 @@ export const DescriptionParagraph = styled.p`
       line-height: 1.6;
     `}
 
-  @media(max-width:768px) {
+  @media(max-width:${({ theme }) => theme.breakpoints.tablet}px) {
     margin: 10px auto;
   }
 `;
@@ -94,11 +94,11 @@ export const DescriptionBox = styled.div`
   margin-left: 70px;
   text-align: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     margin-left: 0px;
     margin: 10px;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.desktop}px) {
     margin-left: 0px;
     text-align: center;
     margin: 10px;
@@ -115,7 +115,7 @@ export const GridBox = styled.section`
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
   }
@@ -124,7 +124,7 @@ export const GridBox = styled.section`
 export const ImagesBox = styled.div`
   display: flex;
   align-items: center;
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     max-width: 310px;
   }
 `;
@@ -140,7 +140,8 @@ export const Testimonials = styled.section`
   height: 52vh;
   position: relative;
   background-color: rgba(0, 0, 0, 0.7);
-  @media (max-width: 767px) {
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     height: 130vh;
   }
 
@@ -153,7 +154,7 @@ export const Testimonials = styled.section`
     position: absolute;
     z-index: -1;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
       height: 130vh;
       width: 100vw;
     }
@@ -182,13 +183,13 @@ export const TestimonialImage = styled.img`
       width: 57px;
       border-radius: 50%;
 
-      @media (max-width: 767px) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         margin-top: 520px;
       }
     `}
 
   &:hover {
-    box-shadow: 2px 1px 2px 1px white;
+    box-shadow: 2px 1px 2px 1px ${({ theme }) => theme.colors.white};
   }
 `;
 export const Box = styled.div`

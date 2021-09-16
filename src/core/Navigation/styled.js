@@ -16,7 +16,7 @@ export const NavigationInner = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 1024px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.desktop}px) {
     justify-content: space-between;
     align-items: center;
     margin: 0px auto;
@@ -26,12 +26,12 @@ export const NameRestaurant = styled.h2`
   font-family: "Style Script", cursive;
   font-size: 46px;
   margin: 0px;
-  color: black;
+  color: ${({ theme }) => theme.colors.black};
 
   ${({ colorName }) =>
     colorName &&
     css`
-      color: white;
+      color: ${({ theme }) => theme.colors.white};
     `}
 `;
 
@@ -43,7 +43,7 @@ export const TypeName = styled.p`
   ${({ colorRest }) =>
     colorRest &&
     css`
-      color: white;
+      color: ${({ theme }) => theme.colors.white};
     `}
 `;
 
@@ -53,7 +53,7 @@ export const ListItem = styled.li`
   font-size: 20px;
   margin-right: 50px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.desktop}px) {
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -63,7 +63,7 @@ export const NavigationList = styled.ul`
   display: flex;
   align-items: center;
 
-  @media (max-width: 1024px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.desktop}px) {
     &.inactive {
       position: fixed;
       opacity: 0;
@@ -81,7 +81,7 @@ export const NavigationList = styled.ul`
       flex-direction: column;
       align-items: center;
       text-align: center;
-      background: white;
+      background: ${({ theme }) => theme.colors.white};
       opacity: 1;
       pointer-events: unset;
       transform: none;
@@ -96,17 +96,17 @@ export const Header = styled.header`
 export const StyledLink = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: ${({ theme }) => theme.colors.black};
   font-size: 23px;
   text-transform: uppercase;
   font-weight: 500;
   transition: color 2s;
 
   &:hover {
-    color: green;
-    border-bottom: 2px solid green;
+    color: ${({ theme }) => theme.colors.green};
+    border-bottom: 2px solid ${({ theme }) => theme.colors.green};
 
-    @media (max-width: 1024px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.desktop}px) {
       border-bottom: unset;
       font-weight: 600;
     }
@@ -116,11 +116,11 @@ export const StyledLink = styled(Link)`
     secondOption &&
     css`
       font-weight: 800;
-      color: white;
+      color: ${({ theme }) => theme.colors.white};
       transition: color 2s;
 
       &:hover {
-        color: green;
+        color: ${({ theme }) => theme.colors.green};
         border-bottom: none;
       }
     `}
@@ -129,7 +129,7 @@ export const StyledLink = styled(Link)`
 export const HamburgerButton = styled.button`
   display: none;
 
-  @media (max-width: 1024px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.desktop}px) {
     display: unset;
     background: none;
     border: none;
@@ -139,7 +139,7 @@ export const HamburgerButton = styled.button`
 
 export const Hamburger = styled.img`
   display: none;
-  @media (max-width: 1024px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.desktop}px) {
     display: block;
     margin: 10px;
     width: 40px;

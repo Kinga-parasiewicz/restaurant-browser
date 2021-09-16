@@ -1,15 +1,15 @@
 import styled, { css } from "styled-components";
 
 export const StyledButton = styled.button`
-  background: #323539;
+  background: ${({ theme }) => theme.colors.shark};
   font-size: 20px;
   padding: 9px 60px;
   max-width: 300px;
-  color: white;
-  border: 1px solid white;
+  color: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.white};
   z-index: 2;
-  cursor:pointer;
-  @media (max-width: 1024px) {
+  cursor: pointer;
+  @media (max-width: ${({ theme }) => theme.breakpoints.desktop}px) {
     display: none;
   }
 
@@ -17,23 +17,22 @@ export const StyledButton = styled.button`
     sectionButton &&
     css`
       margin-left: -170px;
-      z-index:0;
+      z-index: 0;
     `}
 
   ${({ background }) =>
     background &&
     css`
-      border: 2px solid #323539;
-      background: #323539;
+      border: 2px solid ${({ theme }) => theme.colors.shark};
+      background: ${({ theme }) => theme.colors.shark};
       text-transform: uppercase;
       font-size: 17px;
       padding: 12px 40px;
 
-
-  @media (max-width: 1024px) {
-    display: block;
-    text-align: center;
-    margin:20px auto;
-  }
+      @media (max-width: ${({ theme }) => theme.breakpoints.desktop}px) {
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+      }
     `}
 `;

@@ -6,16 +6,16 @@ export const BoxContent = styled.img`
   margin-right: 4px;
 
   &:hover {
-    box-shadow: 2px 2px 20px 2px green;
+    box-shadow: 2px 2px 20px 2px ${({ theme }) => theme.colors.green};
     transform: scale(1.4);
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
       transform: scale(1);
       box-shadow: none;
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     max-width: 310px;
     margin-top: 8px;
   }

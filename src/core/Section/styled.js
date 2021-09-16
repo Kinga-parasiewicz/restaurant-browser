@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const Image = styled.img`
   max-width: 400px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.desktop}px) {
     max-width: 260px;
   }
 
@@ -12,11 +12,11 @@ export const Image = styled.img`
     css`
       max-width: 750px;
 
-      @media (max-width: 1024px) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.desktop}px) {
         height: 400px;
       }
 
-      @media (max-width: 767px) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         display: none;
       }
     `}
@@ -26,7 +26,7 @@ export const Image = styled.img`
     css`
       max-width: 355px;
 
-      @media (max-width: 1024px) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.desktop}px) {
         max-width: 230px;
       }
     `}
@@ -39,7 +39,7 @@ export const ImagesBox = styled.div`
   justify-content: space-between;
   margin: 20px auto;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     flex-direction: column;
     text-align: center;
   }
@@ -55,7 +55,7 @@ export const Description = styled.p`
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
-  color: #71726e;
+  color: ${({ theme }) => theme.colors.stormDust};
   margin: 30px;
 
   ${({ sentence }) =>
@@ -74,7 +74,7 @@ export const Description = styled.p`
       font-weight: 100;
     `}
 
-    @media(max-width:768px) {
+    @media(max-width:${({ theme }) => theme.breakpoints.tablet}px) {
     justify-content: center;
     margin: 0 auto;
   }
@@ -92,7 +92,7 @@ export const BoxDescription = styled.div`
   display: flex;
   flex-direction: row;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     justify-content: center;
   }
 `;

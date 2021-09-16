@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const StyledForm = styled.form`
   &.inactivefirst {
-    background: white;
+    background: ${({ theme }) => theme.colors.white};
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
@@ -13,7 +13,7 @@ export const StyledForm = styled.form`
     z-index: 0;
     position: relative;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
       flex-direction: column;
     }
   }
@@ -46,7 +46,7 @@ export const FormLabel = styled.label`
 
 export const FormInput = styled.input`
   border: none;
-  border-bottom: 1px solid #323539;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.shark};
   margin-top: 5px;
   height: 30px;
 
@@ -63,7 +63,7 @@ export const FormInput = styled.input`
 
 export const Select = styled.select`
   border: none;
-  border-bottom: 1px solid #323539;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.shark};
   margin: 7px auto;
   padding-right: 15px;
 `;

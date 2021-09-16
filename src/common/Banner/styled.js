@@ -25,15 +25,16 @@ export const Section = styled.section`
       height: 70vh;
     `}
 
-  ${({thirdBanner}) => thirdBanner && css `
-  background: url(${Menu});
-  background-size: cover;
+  ${({ thirdBanner }) =>
+    thirdBanner &&
+    css`
+      background: url(${Menu});
+      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       height: 70vh;
-      
-  
-  `}`;
+    `}
+`;
 
 export const SectionName = styled.h1`
   margin-top: 200px;
@@ -42,10 +43,10 @@ export const SectionName = styled.h1`
   margin-bottom: 20px;
   margin-left: -200px;
 
-  @media(max-width:767px){
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 5em;
-    margin-top:110px;
-    margin-left:0px;
+    margin-top: 110px;
+    margin-left: 0px;
   }
 `;
 
@@ -56,9 +57,9 @@ export const SectionParagraph = styled.p`
   margin-left: -180px;
   margin-bottom: 50px;
 
-  @media(max-width:767px){
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 16px;
-    margin:20px;
-    color:white;
+    margin: 20px;
+    color: ${({ theme }) => theme.colors.white};
   }
 `;
